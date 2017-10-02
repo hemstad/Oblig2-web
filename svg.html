@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>oblig2</title>
+		<link href="stilsett.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+
+	</head>
+	<body>
+		<header id="artikkel">
+			<h1>Artikkelside</h1>
+		</header>
+
+		<main>
+		<div id="maincontainer">
+			<nav>
+				<ul>
+					<li><a href="oppgave.html"><i class="fa fa-heart-o"></i>Forside</a></li>
+					<li><a href="omoppgave12.html"><i class="fa fa-heart-o"></i>Om oppgave 1&2 </a></li>
+					<li><a href="mathml.html"><i class="fa fa-heart-o"></i>MathML</a></li>
+					<li><a class="emne"><i class="fa fa-heart-o"></i>SVG</a></li>
+					<li><a href="oktnov.html"><i class="fa fa-heart-o"></i>Ressurser</a></li>
+				</ul>
+			</nav>
+		</div>
+		</main>
+		<article>
+		<div id="math">
+		<h1>Hva er SVG og hva bruker man SVG til?</h1>
+		<h4>Hva er SVG?</h4>
+		<p>SVG er grafikk tegning. Det kan minne oss om noen elementer fra Canvas, og kan på mange måter se litt likt ut, men dette er en litt annen type grafikk. SVG kan være både tekst og bilde.</p>
+		<h4>Hva brukes SVG til?</h4>
+		<p>Det er mange grunner til å bruke SVG. Hovedsakelig brukes SVG til å definere grafikk for internett. Det er lettere å skalere de, de bruker mindre plass enn for eksempel JPG og PNG-bilder, man kan bruke det samme bilde flere ganger på en side, og man kan endre de ved hjelp av både Javascript og CSS. Det ideelle å bruke SVG til er ved bruk av enten ikoner, enkel linjegrafikk, eller logoer. Jeg vil vise noen eksempler her:</p>
+		<svg width="200" height="200">
+			<polygon points="100,10, 50,198, 200,200"
+			style="fill:lightgrey;
+					stroke:black;
+					stroke-width:5;
+					fill-rule:evenodd;" />
+		</svg>
+		<svg width="150px" height="150px"  viewBox="0 0 400 400">
+			  <g transform="translate(150,150)">
+			  <circle cx="0" cy="0" r="100" fill="black"/>
+			  <circle cx="40" cy="-40" r="20" fill="lightgrey"/>
+			  <circle cx="-40" cy="-40" r="20" fill="lightgrey"/>
+			  </g>
+		</svg>
+		<svg width="200" height="200">
+			<polygon points="100,10 40,198 190,78 10,78 160,198"
+			style="fill:lightgrey;
+					stroke:black;
+					stroke-width:5;
+					fill-rule:evenodd;" />
+		</svg>
+		<p>Med SVG kan man også animere bilder. </p>
+		</article>
+		<footer>
+			<p>Kristine Hemstad - <i class="fa fa-graduation-cap"></i>student på hiof 2017</p>
+		</footer>
+	</body>
+</html>

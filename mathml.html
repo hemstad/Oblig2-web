@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>oblig2</title>
+		<link href="stilsett.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=MML_CHTML">
+		</script>
+		
+
+	</head>
+	<body>
+		<header id="artikkel">
+			<h1>Artikkelside</h1>
+		</header>
+
+		<main>
+		<div id="maincontainer">
+			<nav>
+				<ul>
+					<li><a href="oppgave.html"><i class="fa fa-heart-o"></i>Forside</a></li>
+					<li><a href="omoppgave12.html"><i class="fa fa-heart-o"></i>Om oppgave 1&2</a></li>
+					<li><a class="emne"><i class="fa fa-heart-o"></i>MathML</a></li>
+					<li><a href="svg.html"><i class="fa fa-heart-o"></i>SVG</a></li>
+					<li><a href="oktnov.html"><i class="fa fa-heart-o"></i>Ressurser</a></li>
+				</ul>
+			</nav>
+		</div>
+		</main>
+		<article>
+		<div id="math">
+			<h1>Hva er MathML og hva brukes det til?</h1>
+			<h4>Hva er MathML?</h4>
+			<p>Vi har to typer av MathML. Content- og presentation MathML. Content beholder semantikken i det matematiske uttrykket, det vil si hvordan det skal tales, mens presentation Math ML beskriver hvordan utseendet skal være og hvordan det skal vises. </p>
+			<p>MathML tar oss inn i den matimatiske verden. Den hjelper oss til å legge til matematisk og vitenskapelig innhold på nettet ved hjelp koder. MathML består av ulike XML-koder som blir brukt til å markere en likning, i forhold til dens semantikk og presentasjon. MathML har om lag 30 elementer og elementnavnene begynner på m.</p>
+			<h4>Hva brukes MathML til i forbinnelse med HTML?</h4>
+			<p>Som nevnt tar vi i bruk semantiske tagger som setter et grunnlag for bruken av MathML og kan gi matematiske uttrykk og formler. Å bruke MathML er en god erstatning for bilder. </p>
+			<p>For at MathML stykket skal vises korrekt i alle browsere, må man linke til typen i "head" innledningsvis i HTML koden. </p>
+			<p>For å gi noen eksempler på hvordan vi bruker MathML skal jeg gi noen eksempler:</p>
+		<math>
+			<semantics>
+			<!-- eksempel 1 -->
+			<mrow>
+				<msup>
+					<mi>a</mi>
+						<mn>2</mn>
+				</msup>
+				<mo>+</mo>
+				<msup>
+					<mi>b</mi>
+						<mn>2</mn>
+				</msup>
+					<mo>=</mo>
+				<msup>
+					<mi>c</mi>
+						<mn>2</mn>
+				</msup>
+			</mrow>
+			</semantics>
+		</math>
+		
+		<p>Man kunne også skrevet det på denne måten, men dette er ikke med den ordentlige bruken av Math ML. Det ser veldig likt ut, men kodene er ikke brukt:</p>
+		<p>X<sup>2</sup>+Y<sup>2</sup>=R<sup>2</sup></p>
+		
+		<p>Men som du ser av eksemplet under er dette et penere oppsett av stykket:</p>
+		<math>
+			<semantics>
+			<!-- Dette er forskjellen når man  bruker MathML -->
+			<mrow>
+				<msup>
+					<mi>X</mi>
+						<mn>2</mn>
+				</msup>
+				<mo>+</mo>
+				<msup>
+					<mi>Y</mi>
+						<mn>2</mn>
+				</msup>
+					<mo>=</mo>
+				<msup>
+					<mi>R</mi>
+						<mn>2</mn>
+				</msup>
+			</mrow>
+			</semantics>
+		</math>
+		<p>Eksempel:</p>
+		<!-- eksempel 3 -->
+		<math>
+			  <mrow>
+				<msup>
+				  <mi>x</mi>
+				  <mn>2</mn>
+				</msup>
+				<mo>+</mo>
+				<mrow>
+				  <mn>4</mn>
+				  <mo>&InvisibleTimes;</mo>
+				  <mi>x</mi>
+				</mrow>
+				<mo>+</mo>
+				<mn>4</mn>
+			  </mrow>
+			  <mo>=</mo>
+			  <mn>0</mn>
+			</mrow>
+		</math>
+		
+		<p>
+		<p>Eksmpel:</p>
+		<!-- Eksempel 4 -->
+		<math>
+				<mrow>
+		  <mi>x</mi>
+		  <mo>=</mo>
+		  <mfrac>
+			<mrow>
+			  <mrow>
+				<mo>-</mo>
+				<mi>b</mi>
+			  </mrow>
+			  <mo>&PlusMinus;</mo>
+			  <msqrt>
+				<mrow>
+				  <msup>
+					<mi>b</mi>
+					<mn>2</mn>
+				  </msup>
+				  <mo>-</mo>
+				  <mrow>
+					<mn>4</mn>
+					<mo>&InvisibleTimes;</mo>
+					<mi>a</mi>
+					<mo>&InvisibleTimes;</mo>
+					<mi>c</mi>
+				  </mrow>
+				</mrow>
+			  </msqrt>
+			</mrow>
+			<mrow>
+			  <mn>2</mn>
+			  <mo>&InvisibleTimes;</mo>
+			  <mi>a</mi>
+			</mrow>
+		  </mfrac>
+		</mrow>
+		</math>
+		</p>
+		
+		<p>
+		<p>Eksempel: </p>
+		<!-- Eksempel 5 -->
+		<math>
+		<mrow>
+		  <mi>A</mi>
+		  <mo>=</mo>
+		  <mfenced open="[" close="]">
+			<mtable>
+			  <mtr>
+				 <mtd><mi>x</mi></mtd>
+				 <mtd><mi>y</mi></mtd>
+			  </mtr>
+			  <mtr>
+				 <mtd><mi>z</mi></mtd>
+				 <mtd><mi>w</mi></mtd>
+			  </mtr>
+			</mtable>
+		  </mfenced>
+		</mrow>
+		</math>
+		</p>
+
+		
+		<p> Dette er en mye penere måte å fremstille et slikt matematisk uttrykk på enn hvis vi skulle skrevet det som en vanlig tekst.</p>
+		</div>
+		</article>
+		<footer>
+			<p>Kristine Hemstad - <i class="fa fa-graduation-cap"></i>student på hiof 2017</p>
+		</footer>
+	</body>
+</html>
